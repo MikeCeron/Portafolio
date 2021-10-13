@@ -12,7 +12,8 @@
     <header>
         <div class="wrap">
             <div id="logotipo">
-                <span class="gear">S</span>
+                <!--<span class="gear">S</span>-->
+                <img src="images/gear.svg" />
                 <h3>LOGO</h3>
             </div>
 
@@ -28,8 +29,8 @@
     <!--Termina cabecera y barra de navegacion-->
 
     <!--Inicia descripcion-->
-    <div id="description">
-        <section id="datos">
+    <div id="description" class="fixed">
+        <section class="datos">
             <h2>Hola a todos!</h2>
             <h1>Soy Miguel Cerón</h1>
             <p>Soy ingeniero en Geofísica, aunque ahora estudio para ser un Java Fullstack Developer</p>
@@ -49,11 +50,12 @@
                 </a>
             </div>
 
-            <button id="curriculum">Descargar cirrículum</button>
-
+            <div id="botonCV">
+                <button>DESCARGAR CURRÍCULUM</button>
+            </div>
         </section>
 
-        <aside id="foto">
+        <aside class="foto">
             <img src="images/perfil.jpg" alt="Mi foto de perfil" />
         </aside>
     </div>
@@ -61,8 +63,8 @@
 
     <div class="clearfix"></div>
 
-    <!--Inicia footer-->
-    <footer>
+    <!--Inicia lista de proyectos-->
+    <div id="generation">
         <p>
             Participé en <a href="https://generation.org">@GenerationMx</a> y realicé proyectos como a continuación veremos.
         </p>
@@ -70,7 +72,45 @@
         <p>Aquí hay algunos que me gustaría compartir</p>
 
         <a href="#"><img src="./images/arrow-down.svg" alt="Proyectos alternos" /></a>
-    </footer>
-    <!--Termina footer-->
+    </div>
+    <!--Termina lista de proyectos-->
+
+    <!--Inicia miProyecto-->
+    <div id="miProyecto" class="fixed">
+        <section class="datos">
+            <h1>mi_proyecto.com</h1>
+            <p>Accede a más de 120 proyectos que te ayudarán a mejorar</p>
+            <p>tus habilidades como desarrollador Front-End.</p>
+
+            <form class="botones">
+                <div class="botonStuff">
+                    <button name="Proyecto" type="button">VER PROYECTO</button>
+                </div>
+
+                <div class="botonEmpty">
+                    <button class="Codigo" type="button">VER CÓDIGO</button>
+                </div>
+            </form>
+        </section>
+
+        <aside class="foto">
+            <img src="images/perfil.jpg" alt="Mi foto de perfil" />
+        </aside>
+    </div>
+    <!--Termina miProyecto-->
+    <div class="clearfix"></div>
+
+    <section class="feedback">
+        <h3>
+            "Miguel ha sido de gran ayuda para acelerar ciertos esfuerzos de desarrollo. Lo que nos hubiera llevado 6 meses sólo les llevó 1.5 meses".
+        </h3>
+        <h4>
+            ERIKA FLORES / INSTRUCTOR GENERATION
+        </h4>
+    </section>
+
+    <!--Inicia Marvol-->
+    <!--Termina Marvol-->
+
 </body>
 </html>
