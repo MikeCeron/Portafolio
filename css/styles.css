@@ -9,7 +9,7 @@
 }
 
 /*Fuentes*/
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700;900&display=swap');
 
 @font-face {
     font-family: "LuckiestGuyRegular";
@@ -88,6 +88,7 @@ header {
 
 #menu ul li{
     font-family: var(--fontBase);
+    font-weight: 700;
     font-size: 20px;
     display: inline-block;
     letter-spacing: 1px;
@@ -116,10 +117,14 @@ header {
 
 .datos {
     display: block;
-    float: left;
+    /* float: left; */
     margin: 0px 200px 0px 130px; 
     width: 500px;
     height: 300px;
+}
+
+#description section {
+    float: left;
 }
 
 .datos h2,
@@ -140,13 +145,15 @@ header {
 .datos p {
     font-family: var(--fontBase);
     font-size: 18px;
-    margin: 30px;
+    margin-top: 30px;
+    line-height: 30px;
 }
 
 /*Foto de perfil*/
 .foto {
     display: block;
 }
+
 
 .foto img {
     margin-left: 0px;
@@ -179,10 +186,25 @@ header {
 #generation {
     width: 1200px;
     margin: 0px auto;
+    margin-top: 150px;
 }
 
-#generation p {
+#generation h2 {
     text-align: center;
+    width: 650px;
+    margin: 0px auto;
+    margin-top: 5px;
+    font-family: var(--fontBase);
+    font-size: 30px;
+    font-weight: 400;
+}
+
+#generation h3 {
+    text-align: center;
+    margin-top: 30px;
+    font-family: var(--fontBase);
+    font-size: 18px;
+    font-weight: 900;
 }
 
 #generation a img {
@@ -195,6 +217,8 @@ header {
 #botonCV button {
     display: block;
     text-align: center;
+    font-family: var(--fontBase);
+    font-weight: 700;
     width: 450px;
     height: 50px;
     color: white;
@@ -211,21 +235,31 @@ header {
 }
 
 /*Mi proyecto*/
-#miProyecto .datos h1 {
+/*#miProyecto .datos h1 {*/
+.letrero h1 {
     text-align: center;
-    line-height: 56px;
+    line-height: 50px;
     margin-bottom: 50px;
     background-color: #310a90;
-    width: 280px;
+    width: auto;
     height: 60px;
     color: white;
     border-radius: 5px;
     box-shadow: -3px 3px 0px white;
 }
 
+#miProyecto section {
+    float: left;
+}
+
 .botones {
     display: block;
     margin-top: 50px;
+}
+
+.botones button {
+    font-family: var(--fontBase);
+    font-weight: 700;
 }
 
 .botonStuff button {
@@ -262,21 +296,38 @@ header {
 .feedback {
     margin: 0px auto;
     margin-top: 100px;
-    padding-top: 100px;
+    padding-top: 70px;
     width: 1200px;
-    height: 250px;
+    height: 200px;
     border: gray;
     border-radius: 20px;
-    background: lightcyan;
+    background: linear-gradient(to right, hsla(180, 100%, 94%, 0.5) 0%, transparent 100%);
 }
 
 .feedback > h3 {
     margin: 0px auto;
     width: 900px;
     text-align: center;
+    font-family: var(--fontBase);
+    font-weight: 700;
+    font-size: 30px;
 }
 
 .feedback > h4 {
     margin-top: 20px;
     text-align: center;
+    font-family: var(--fontBase);
+    font-weight: 900;
+    font-size: 20px;
+    color: #585fbf;
+}
+
+/*Marvol*/
+#Marvol section{
+    float: right;
+}
+
+/*NETNET*/
+#netnet section{
+    float: left;
 }
